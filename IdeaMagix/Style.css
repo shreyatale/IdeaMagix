@@ -1,0 +1,972 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(40, 169, 220);
+    position: fixed;
+    z-index: 1000;
+    font-family: "Lora", serif;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav1 {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+a:hover {
+    color: orangered;
+}
+
+.navbar .search {
+    background-color: rgb(13, 96, 220);
+    color: white;
+    border: none;
+}
+
+#check,
+label {
+    display: none;
+    cursor: pointer;
+}
+
+.fa-bars {
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.main {
+    width: 100%;
+    height: 250px;
+    background-image: url("https://th.bing.com/th/id/OIP.eVZcq07v3BVmw79reIjTyQHaDQ?w=562&h=247&rs=1&pid=ImgDetMain");
+    background-size: 110% 400px;
+    color: whitesmoke;
+    background-repeat: no-repeat;
+    padding-top: 8%;
+
+}
+
+.main li {
+    margin: 10px 0 0 10px;
+    font-family: "Lora", serif;
+}
+
+.main1 {
+    width: 400px;
+    margin-left: 5%;
+    padding-top: 10px;
+}
+
+.main1 p {
+    margin-top: 20px;
+}
+
+.main #btn {
+    width: 150px;
+    padding: 10px;
+    margin-top: 20px;
+    background: rgb(54, 137, 214);
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.main2 {
+    margin-left: 15%;
+    text-align: center;
+}
+
+.main2 li {
+    margin: 10px 20px 10px 20px;
+    cursor: pointer;
+}
+
+.main2 li::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    display: block;
+    background-color: rgba(66, 120, 226, 0.9);
+    margin-top: 8.8px;
+    transition: all 3s ease;
+}
+
+.main2 li:hover::after {
+    width: 5%;
+}
+
+.main3 {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main3-1 {
+    width: 40%;
+    height: 80%;
+    margin-right: 20px;
+    padding-left: 10%;
+    text-decoration: dotted;
+    margin-top: 10%;
+}
+
+.main3-1 p {
+    margin-top: 10px;
+}
+
+.main3-2 {
+    width: 50%;
+    height: 80%;
+}
+
+.main3-2 img {
+    width: 60%;
+    height: 60%;
+    border-radius: 20px;
+    margin-top: 10%;
+}
+
+.main3-1::after {
+    content: "";
+    width: 90%;
+    height: 1px;
+    position: absolute;
+    display: block;
+    background-color: rgba(66, 120, 226, 0.9);
+    margin: 45px 0 5px -50px;
+}
+
+.main4 {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.main44 {
+    width: 60%;
+}
+
+.main4-1 {
+    width: 100%;
+    height: 250px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.Eligibility p {
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.Eligibility ul {
+    list-style-type: circle;
+    display: block;
+    margin-left: 20px;
+}
+
+.Treatment h2 {
+    margin-bottom: 15px;
+}
+
+.Treatment p {
+    width: 70%;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.Treatment .yes {
+    color: gray;
+    margin-left: 20px;
+}
+
+.Treatment .fa-plus {
+    color: rgb(54, 137, 214);
+}
+
+.Treatment h6::after {
+    content: "";
+    width: 50%;
+    height: 1px;
+    position: absolute;
+    display: block;
+    background-color: rgba(66, 120, 226, 0.5);
+    margin: 25px 0 30px 0;
+}
+
+.Eligibility::after {
+    content: "";
+    width: 50%;
+    height: 1px;
+    position: absolute;
+    display: block;
+    background-color: rgba(66, 120, 226, 0.5);
+    margin: 25px 0 30px 0;
+}
+
+.Patient h2 {
+    margin-top: 85px;
+}
+
+.main4-1 .Patient .stories {
+    width: 90%;
+}
+
+.main4-1 .Patient .stories .video {
+    border: 2px solid gray;
+    width: 70%;
+    padding: 30px;
+    margin: 10px;
+}
+
+.main4-1 .Patient .stories .video img {
+    width: 90%;
+    margin: 10px;
+}
+
+.main4-1 .Patient .stories .video .view {
+    display: flex;
+    align-items: center;
+}
+
+.main4-1 .Patient .stories .video .view img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.main4-1 .Patient .stories .video p {
+    color: gray;
+}
+
+.main4-2 {
+    width: 30%;
+    height: 450px;
+    position: sticky;
+    top: 20%;
+    bottom: 200%;
+    right: 10%;
+    z-index: 400;
+}
+
+.main4-2 form {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    padding: 25px 0 0 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.main4-2 form h2 {
+    font-size: 30px;
+    color: rgb(13, 96, 220);
+    font-family: "Lora", serif;
+}
+
+.main4-2 form p {
+    font-size: 20px;
+}
+
+input,
+textarea {
+    display: block;
+    width: 80%;
+    padding: 15px;
+    margin: 12px;
+}
+
+.main4-2 button {
+    width: 90%;
+    padding: 15px;
+    margin: 14px;
+    background-color: rgb(13, 96, 220);
+    border: none;
+    color: whitesmoke;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.main5 {
+    width: 100%;
+    height: 500px;
+    padding-top: 20px;
+    margin-top: 20%;
+    text-align: center;
+    background-color: skyblue;
+}
+
+.item {
+    height: 300px;
+    background-color: whitesmoke;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.main5-1 {
+    width: 60%;
+    height: 60%;
+    margin: 0px 0 0px 120px;
+}
+
+.main5-1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 40%;
+    left: 10px;
+}
+
+.owl-carousel .owl-nav button.owl-next span,
+.owl-carousel .owl-nav button.owl-prev span {
+    font-size: 80px;
+    color: orangered;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 40%;
+    right: 13px;
+}
+
+.main6 .main5-2 p {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.main6 {
+    height: 300px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main7 {
+    margin-top: 20%;
+    width: 100%;
+    height: 800px;
+    padding-top: 20px;
+    background-color: rgb(40, 169, 220);
+}
+
+.main7 .main7-1 {
+    text-align: center;
+    color: white;
+    height: 20%;
+}
+
+.main7 .main7-1 button {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    color: whitesmoke;
+    background-color: rgb(13, 96, 220);
+}
+
+.main7 .main7-1 h6 {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 30px 0 0 20px;
+}
+
+.main7 .main7-1 h2 {
+    font-size: 30px;
+}
+
+.main7 .main7-1 .no {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.main7 .main7-2 {
+    height: 70%;
+    margin-top: 20px;
+    background-color: rgba(10, 47, 103, 0.8);
+    position: relative;
+}
+
+.main7 .main7-2 .imp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Barlow", sans-serif;
+}
+
+.main7 .main7-2 .imp .Tops {
+    margin-left: 30px;
+    margin-top: 60px;
+}
+
+.main7 .main7-2 .imp .Top {
+    width: 33%;
+}
+
+.main7 .main7-2 .imp .Tops h5 {
+    font-size: 25px;
+    margin: 10px;
+}
+
+.main7 .main7-2 .imp .Tops p {
+    margin: 10px 0 0 25px;
+    font-size: 20px;
+}
+
+.main7 .main7-2 .imp .Tops .box {
+    width: 250px;
+    height: 150px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    box-shadow: rgba(180, 180, 201, 0.25) 0px 13px 27px -5px, rgba(177, 165, 165, 0.25) 0px 8px 16px -8px;
+    z-index: 100;
+    position: absolute;
+    top: -10%;
+}
+
+.main7 .main7-2 .imp .Tops .box .box1 {
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.main7 .main7-2 .imp .Tops .box .box1 .fa-user {
+    margin-left: 30px;
+}
+
+.main7 .main7-2 .imp .Tops .box h6 {
+    text-align: center
+}
+
+.main7 .main7-2 .imp .Tops .box p {
+    color: gray;
+    font-size: 16px;
+}
+
+.main7 .main7-2 .imp .Top2 i {
+    margin: 8px 0 0 10px;
+}
+
+.main7 .main7-2 .imp .Tops h4::after {
+    content: "";
+    width: 15px;
+    height: 3px;
+    position: absolute;
+    display: block;
+    background-color: rgb(66, 120, 226);
+    margin: 15px 0 30px 0;
+}
+
+.main7 .main7-2 .about .Top {
+    margin-left: 50px;
+    font-family: "Lora", serif;
+}
+
+.main7 .main7-2 .about .Tops1 {
+    display: flex;
+    width: 20%;
+
+}
+
+.main7 .main7-2 .about .Tops1 .top {
+    display: block;
+}
+
+.main7 .main7-2 .about .Tops1 img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.main7 .main7-3 {
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width:1014px) {
+    label {
+        display: block;
+        margin-left: 20px;
+        color: whitesmoke;
+    }
+
+    .nav1 {
+        display: none;
+    }
+
+    #check:checked~.nav1 {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        width: 30%;
+        height: 100vh;
+        background-color: rgb(40, 169, 220);
+        color: white;
+        z-index: 6000;
+        text-align: center;
+        padding-top: 20%;
+    }
+
+    .nav li {
+        font-size: 20px;
+        margin-top: 20px;
+        z-index: 600;
+    }
+
+    .main2 li {
+        margin: 15px 20px 11px 6px;
+        font-size: 13px;
+    }
+
+    .main4 {
+        width: 100%;
+    }
+
+    .main4-1 {
+        margin-top: 50px;
+    }
+
+    .main4-2 {
+        width: 30%;
+        height: 450px;
+        position: sticky;
+        top: 15%;
+    }
+
+    .main4-1 .Patient h2 {
+        margin-top: 150px;
+    }
+
+    .main4-2 form {
+        width: 350px;
+    }
+
+    .main4-1 .Patient .stories .video {
+        font-size: 15px;
+    }
+
+    .main5 {
+        margin-top: 20%;
+    }
+
+    .main5-1 {
+        margin: 0px 0 0px 90px;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+        left: 20px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        right: 20px;
+    }
+
+    .main7 {
+        padding-bottom: 8%;
+    }
+
+    .main7 .main7-2 {
+        height: 80%;
+    }
+
+    .main7 .main7-2 .imp .Tops p,
+    h5 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .main4-2 {
+        position: sticky;
+        top: 10%;
+        right: 0%;
+    }
+
+    .main4 {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    .main4-1 {
+        margin-top: 20%;
+    }
+
+    .main4-1 .Patient .stories .video {
+        font-size: 10px;
+    }
+
+    .main7 .main7-2 .imp .Tops .box {
+        width: 200px;
+    }
+
+    .main7 .main7-2 .imp .Tops p,
+    h5 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:850px) {
+    .main4-2 {
+        position: sticky;
+        top: 15%;
+        right: 30%;
+    }
+
+    .main4 {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .main4-1 {
+        margin-top: 10%;
+    }
+    .main4-1 .Patient .stories{
+        width: 107%;
+    }
+    .main5-1 {
+        margin: 0px 0 0px 60px;
+    }
+    .main7 {
+        padding-bottom: 10%;
+        margin-top: 30%;
+    }
+
+    .main7 .main7-2 .imp .Tops1 h1,
+    h6,
+    .main7 .main7-2 .imp .Tops p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    label {
+        display: block;
+        margin-left: 20px;
+        color: whitesmoke;
+    }
+
+    .nav1 {
+        font-size: 7px;
+    }
+
+    #check:checked~.nav1 {
+        top: 102.5%;
+        width: 30%;
+    }
+
+    .nav li {
+        font-size: 20px;
+        margin-top: 20px;
+        z-index: 600;
+    }
+
+    .main1 {
+        width: 65%;
+        margin-left: 2%;
+    }
+
+    .main2 {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .main2 li {
+        margin: 20px 0px 10px 30px;
+        font-size: 9px;
+    }
+
+    .main3-2 img {
+        width: 80%;
+    }
+
+    .main4 {
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    .main4-2 {
+        position: sticky;
+        top: 15%;
+        right: 20%;
+    }
+
+    .main44 {
+        width: 50%;
+    }
+
+    .main4-2 form {
+        width: 300px;
+        margin-left: 17%;
+    }
+
+    .main4-2 form p {
+        font-size: 13px;
+    }
+
+    .main4-2 form input,
+    textarea {
+        display: block;
+        width: 80%;
+        padding: 10px;
+    }
+
+    .main4-2 form button {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .Patient h2 {
+        margin-top: 100px;
+    }
+
+    .main4-1 .Patient .stories {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main4-1 .Patient .stories .video p,
+    h4 {
+        font-size: 10px;
+    }
+
+    .main4-1 .Patient .stories .video {
+        height: 270px;
+        width: 55%;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev span,
+    .owl-carousel .owl-nav button.owl-prev {
+        left: 40px;
+        top: 40%;
+        color: orangered;
+        font-size: 50px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next span,
+    .owl-carousel .owl-nav button.owl-next {
+        right: 40px;
+        top: 40%;
+        font-size: 50px;
+    }
+
+    .main5-1 {
+        margin: 0px 0 0px 50px;
+    }
+
+    .main7 {
+        margin-top: 30%;
+        height: 700px;
+    }
+
+    .main7 .main7-2 {
+        height: 75%;
+    }
+
+    .main7 .main7-2 .imp .Tops h5 {
+        font-size: 20px;
+    }
+
+    .main7 .main7-2 .imp .Tops p {
+        font-size: 12px;
+    }
+
+    .main7 .main7-2 .imp .Tops .box {
+        width: 150px;
+        height: 150px;
+        right: 10px;
+        text-align: center;
+    }
+
+    .main7 .main7-2 .imp .Tops .box2 p {
+        font-size: 10px;
+    }
+
+    .main7 .main7-2 .imp {
+        font-size: 10px;
+    }
+
+    .main7 .main7-2 .imp .Tops h4::after {
+        margin: 3px 0 30px 0;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    #check:checked~.nav1 {
+        top: 101%;
+    }
+
+    .main1 {
+        font-size: 13px;
+    }
+
+    .main2 li {
+        font-size: 8px;
+        margin: 10px 0px 10px 10px;
+    }
+
+    .main3 {
+        display: block;
+    }
+
+    .main3 .main3-1 {
+        width: 90%;
+        height: 50%;
+        padding-left: 10px;
+    }
+
+    .main3 .main3-1 p {
+        font-size: 12px;
+    }
+
+    .main3 .main3-2 {
+        width: 70%;
+        text-align: center;
+    }
+
+    .main3 .main3-2 img {
+        width: 90%;
+        border-radius: 10px;
+        margin-top: -13%;
+    }
+
+    .main3-1::after {
+        margin: 250px 0 5px -50px;
+    }
+
+    .main4-2 {
+        margin-top: 30%;
+        width: 80%;
+        display: none;
+    }
+
+    .main44 {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .main4-1 .Eligibility {
+        width: 70%;
+    }
+
+    .Treatment h6::after {
+        width: 80%;
+    }
+
+    .Eligibility::after {
+        width: 80%;
+    }
+    .main4-1 .Patient h2{
+        margin-top: 20px;
+    }
+    .main4-1 .Patient .stories .video {
+        width: 60%;
+        height: 250px;
+    }
+
+    .main4-1 .Patient .stories .video p {
+        font-size: 10px;
+    }
+
+    .main3 h2,
+    .main4 h2 {
+        font-size: 20px;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+        position: absolute;
+        top: 40%;
+        left: 12px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        position: absolute;
+        top: 40%;
+        right: 10px;
+    }
+
+    .main5 .main5-1 {
+        margin: 0px 0 0px 50px;
+    }
+
+    .main7 {
+        height: 700px;
+        margin-top: 30%;
+        padding-bottom: 45%;
+    }
+    .main7 .main7-2 {
+        height: 100%;
+    }
+    .main7 .main7-1 h6,
+    h2 {
+        font-size: 10px;
+    }
+
+    .main7 .main7-2 .imp .Tops .box {
+        top: -15px;
+    }
+
+    .main7 .main7-2 .imp .Tops {
+        font-size: 5px;
+    }
+
+    .main7-2 .imp {
+        width: 80%;
+    }
+    .main7 .main7-2 .about{
+        font-size: 10px;
+        width: 100%;
+    } 
+
+}
+
+@media screen and (max-width:540px) {
+    #check:checked~.nav1 {
+        top: 101%;
+    }
+
+    .main4-1 .Patient .stories .video img {
+        height: 60%;
+    }
+
+    .main7 {
+        margin-top: 50%;
+    }
+
+    .main5 {
+        margin-top: 30%;
+    }
+
+}
